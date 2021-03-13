@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+//Importacion de la liberia react-mdl
+import 'react-mdl/extra/material.css' ; 
+import 'react-mdl/extra/material.js' ;
+// Importacion de  BrowserRouter react-router-dom para manejar las rutas que van a estar en el main.js
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
